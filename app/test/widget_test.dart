@@ -16,8 +16,10 @@ void main() {
     );
 
     await tester.pump();
-    await tester.pumpAndSettle();
+    await tester.pump(const Duration(seconds: 1));
 
-    expect(find.text('Questions loaded: 10'), findsOneWidget);
+    expect(find.textContaining('Question 1 of'), findsOneWidget);
+    expect(find.text('Submit Answer'), findsOneWidget);
+    expect(find.text('Next Question'), findsOneWidget);
   });
 }

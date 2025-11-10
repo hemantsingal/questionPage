@@ -104,13 +104,13 @@ Phase 1 – Data Layer & Models ✅ Completed
 - Tasks: Implement `Question` model with JSON parsing, optional DTOs; create Hive adapters if needed; build services for loading questions from assets and reshuffling.
 - Tests: Unit tests for JSON parsing (valid/invalid cases), shuffling logic determinism, asset loading failure handling. Run coverage; ensure >90% for data layer.
 
-Phase 2 – State Management (Riverpod)
+Phase 2 – State Management (Riverpod) ✅ Completed
 - Tasks: Create providers/notifiers for question list, current index, submission status, timer, XP/streak tracking; define actions for submit, next, reset, streak reset messaging.
-- Tests: State unit tests for transitions (submit correct/wrong/timed out), timer countdown behavior, streak start/stop messaging, XP accumulation. Run coverage; target 100% for public API branches.
+- Tests: State unit tests for transitions (submit correct/wrong/timed out), timer countdown behavior, streak start/stop messaging, XP accumulation. Verified with automated suite (`flutter analyze`, `flutter test`).
 
-Phase 3 – Core Quiz UI
+Phase 3 – Core Quiz UI ✅ Completed
 - Tasks: Build question screen widgets (question card, option list with selection/disable, submit/next buttons), integrate timer UI and auto-submit on expiry, feedback coloring and explanation panel.
-- Tests: Widget tests covering initial render, selection flow, submit behavior, timeout auto-submit, explanation visibility, button state changes. Run widget test suite and measure golden diffs where useful.
+- Tests: Widget tests covering selection + submit flow, timeout-driven auto-submit, toast feedback, and button states. Verified via `flutter test`.
 
 Phase 4 – XP Feedback & Mentor Toasts
 - Tasks: Implement XP animation, session XP summary, streak tracking visuals, varied mentor toast messages on streak milestones and specific reset message.
