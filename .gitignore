@@ -1,0 +1,55 @@
+# Flutter/Dart/Pub related
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+
+# Build outputs
+build/
+
+# iOS
+app/ios/Flutter/.last_build_id
+app/ios/Pods/
+app/ios/Flutter/flutter_export_environment.sh
+app/ios/Frameworks/
+app/ios/.symlinks/
+app/ios/Runner.xcworkspace/
+
+# Android
+app/android/.gradle/
+app/android/captures/
+app/android/local.properties
+app/android/app/debug/
+app/android/app/profile/
+app/android/app/release/
+app/android/key.properties
+
+# Web
+app/web/.dart_tool/
+
+# Windows
+app/windows/flutter/ephemeral/
+
+# Linux
+app/linux/flutter/ephemeral/
+
+# macOS
+app/macos/Flutter/ephemeral/
+
+# IntelliJ related
+.idea/
+*.iml
+
+# VS Code related
+.vscode/
+
+# Coverage reports
+coverage/
+
+# Hive boxes
+*.hive
+
+# Packages
+pubspec.lock
+
